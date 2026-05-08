@@ -3,61 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma flamme</title>
+    <title>Pour Grace Fatetua - Mon Amour Éternel</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 class="text-wave ">Quand tu liras ceci, pense à moi</h1>
+    <nav class="navigation">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="rencontre.html">Notre Rencontre</a>
+        <a href="souvenirs.html">Nos Souvenirs</a>
+        <a href="sentiments.html">Mes Sentiments</a>
+        <a href="reves.html">Nos Rêves</a>
+        <a href="promesse.html">Ma Promesse</a>
+    </nav>
+
     <div class="sky"></div>
-    <div class="lettre">
-           <h2>Pour toi <strong>NKAM Grace</strong></h2>
-           <p>Je t’écris ces quelques lignes avec le cœur un peu fébrile, mais sincère.
+    
+    <header class="hero">
+        <h1 class="text-wave">Pour Toi, Grace Fatetua</h1>
+        <p class="subtitle">Mon amour, mon cœur, ma destinée</p>
+    </header>
 
-Depuis quelque temps, je ressens quelque chose de spécial quand je pense à toi. Ta présence, ton sourire tel que je l'imagine, ta façon d’être… tout cela me touche plus que je ne saurais l’expliquer. Ce n’est pas une déclaration précipitée, juste l’envie de partager ce que je ressens avec honnêteté.
+    <main class="content">
+        <section class="welcome">
+            <div class="heart-beat"></div>
+            <h2>Bienvenue dans notre histoire d'amour</h2>
+            <p>Ce site est dédié à la femme qui illumine ma vie, celle qui fait battre mon cœur plus fort à chaque instant.</p>
+            <p><strong>Grace Fatetua</strong>, tu es mon tout, mon présent et mon avenir.</p>
+            
+            <div class="love-letter-preview">
+                <h3>Une lettre du cœur</h3>
+                <p>Je t'écris ces lignes avec toute la sincérité de mon âme. Depuis que tu es entrée dans ma vie, chaque jour a pris une nouvelle couleur, chaque moment est devenu précieux.</p>
+                <p>Je ne sais pas ce que l'avenir nous réserve, mais une chose est certaine : je veux le construire avec toi, à tes côtés, pour toujours.</p>
+                <p class="signature">Avec tout mon amour,<br><span>Michael</span></p>
+            </div>
+        </section>
 
-Je ne sais pas où cela pourrait nous mener, mais j’aimerais apprendre à te connaître encore plus, passer du temps avec toi, et peut-être, si nos cœurs se répondent… écrire quelque chose de beau ensemble.
+        <div class="floating-hearts">
+            <span>❤️</span>
+            <span>💕</span>
+            <span>💖</span>
+        </div>
+    </main>
 
-Quoi que tu ressentes, sache que je te respecte profondément, et que cette lettre n’est là que pour t’ouvrir une petite porte… libre à toi de l’entrebâiller, ou non.
-</p>
-           <p style="text-align: right;">Avec douceur, <br> Michael</p>
-       </div>
-    <script>
-  const sky = document.querySelector('.sky');
+    <footer>
+        <p>Fait avec tout mon amour pour Grace Fatetua 💝</p>
+        <p class="date">Notre histoire commence ici et dure éternellement</p>
+    </footer>
 
-  function createShootingStar() {
-    const star = document.createElement('div');
-    star.classList.add('shooting-star');
-    star.style.top = Math.random() * window.innerHeight + 'px';
-    star.style.left = Math.random() * window.innerWidth + 'px';
-    star.style.animationDuration = (1 + Math.random()).toFixed(2) + 's';
-    sky.appendChild(star);
+    <audio id="musique" loop>
+        <source src="Alan_Walker_-_The_True_Leader_CeeNaija.com_.mp3" type="audio/mpeg">
+    </audio>
 
-    setTimeout(() => {
-      star.remove();
-}, 2000);
-}
-
-  // Générer une pluie constante
-  setInterval(() => {
-    for (let i = 0; i < 3; i++) {
-      createShootingStar();
-}
-}, 500);
-</script>
-<audio id="musique" loop>
-  <source src="Alan_Walker_-_The_True_Leader_CeeNaija.com_.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-  const audio = document.getElementById('musique');
-  function lancerAudio() {
-    audio.play();
-    document.removeEventListener('click', lancerAudio);
-}
-  document.addEventListener('click', lancerAudio);
-</script>
-
-
-
+    <script src="script.js"></script>
 </body>
 </html>
